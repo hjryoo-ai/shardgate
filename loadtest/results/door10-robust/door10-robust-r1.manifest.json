@@ -3,7 +3,7 @@
  "rep": 1,
  "seed": "r1",
  "commit": null,
- "dirty": false,
+ "dirty": null,
  "env": {
   "SG_ADMIT_INTERVAL": "4s",
   "SG_ADMIT_MIN_BEATS": "5",
