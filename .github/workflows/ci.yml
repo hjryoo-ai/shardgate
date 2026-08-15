@@ -39,9 +39,16 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - uses: golangci/golangci-lint-action@v6
+      # 액션 메이저는 golangci-lint 메이저와 묶여 있다 — v6 는 v1 계열만 설치한다.
+      # `.golangci.yml` 은 `version: "2"` 스키마이고 go.mod 는 1.26.5 를 노린다.
+      # 그래서 v6 + latest 는 v1.64.8(go1.24 빌드)을 깔고 두 가지 이유로 실패한다.
+      #
+      # 버전을 고정하는 이유: `latest` 는 어제 통과한 CI 가 오늘 깨질 수 있다는 뜻이고,
+      # 그러면 실패가 내 코드 탓인지 린터 탓인지 구분하는 데 시간을 쓰게 된다.
+      # 로컬에서 `make lint` 가 쓰는 것과 같은 버전을 박아 둔다.
+      - uses: golangci/golangci-lint-action@v8
         with:
-          version: latest
+          version: v2.12.2
 
   # compose 가 포트를 0.0.0.0 에 게시하는 회귀를 PR 단계에서 잡는다.
   # 이 검사가 생긴 이유는 scripts/check-exposure.sh 머리에 적어 두었다.

@@ -168,30 +168,41 @@ func TestRechallengeRewindsObservationClock(t *testing.T) {
 // 진짜 불변식(orig_rank 보존)을 깨게 된다.
 func TestRestoredRankRisesWhenSomeoneAheadReturns(t *testing.T) {
 	h := newHarness(t, nil)
-	h.enqueue("tokAhead") // 앞사람
-	h.enqueue("tokBehind")
+	h.enqueue("tok1")
+	h.enqueue("tok2")
 
-	aheadRank := h.position("tokAhead").Rank
-	behindRank := h.position("tokBehind").Rank
+	// **누가 앞인지는 진입 순서로 정해지지 않는다.** 하네스는 추첨 구간 안에 있고,
+	// 그 구간의 요점이 바로 도착 순서를 무효화하는 것이다(DESIGN §3.2). 그래서
+	// 앞사람을 진입 순서로 가정하지 않고 **실제 순번에서 고른다.**
+	//
+	// 초판은 "먼저 넣은 쪽이 앞"이라고 가정했다. 로컬에서는 난수가 우연히 그렇게
+	// 나와 통과했고, CI 의 첫 실행에서 `ahead=1 behind=0` 으로 뒤집혀 깨졌다.
+	// 순번의 의미를 문서화하려는 테스트가 정작 이 시스템이 폐기한 FIFO 의미론을
+	// 스스로 가정하고 있었던 셈이다.
+	ahead, behind := "tok1", "tok2"
+	if h.position("tok1").Rank > h.position("tok2").Rank {
+		ahead, behind = "tok2", "tok1"
+	}
+	aheadRank := h.position(ahead).Rank
+	behindRank := h.position(behind).Rank
 	if aheadRank >= behindRank {
-		t.Fatalf("전제가 틀렸다: ahead=%d behind=%d", aheadRank, behindRank)
+		t.Fatalf("두 참가자의 순번이 같다: ahead=%d behind=%d", aheadRank, behindRank)
 	}
 
 	// 둘 다 격리된다. 앞사람이 빠지면 뒷사람의 순번이 앞당겨진다.
-	h.greylist("tokAhead", aheadRank, 55)
-	greyBehind := h.greylist("tokBehind", behindRank, 55)
-	_ = greyBehind
+	h.greylist(ahead, aheadRank, 55)
+	h.greylist(behind, behindRank, 55)
 
 	// 뒷사람이 먼저 복귀한다 — 앞사람이 아직 없으므로 순번이 당겨져 보인다.
-	h.rechallenge("tokBehind", 2, 35, 70)
-	pulledUp := h.position("tokBehind").Rank
+	h.rechallenge(behind, 2, 35, 70)
+	pulledUp := h.position(behind).Rank
 	if pulledUp >= behindRank {
 		t.Fatalf("앞사람이 빠졌는데 순번이 안 당겨졌다: %d → %d", behindRank, pulledUp)
 	}
 
 	// 이제 앞사람이 복귀한다. 뒷사람이 **보는** 순번은 원래대로 돌아간다.
-	h.rechallenge("tokAhead", 2, 35, 70)
-	after := h.position("tokBehind")
+	h.rechallenge(ahead, 2, 35, 70)
+	after := h.position(behind)
 
 	if after.Rank <= pulledUp {
 		t.Fatalf("앞사람이 돌아왔는데 순번이 그대로다: %d → %d", pulledUp, after.Rank)
@@ -200,7 +211,7 @@ func TestRestoredRankRisesWhenSomeoneAheadReturns(t *testing.T) {
 		t.Fatalf("순번 = %d, want %d — 원래 자리로 돌아와야 한다", after.Rank, behindRank)
 	}
 	// 줄에서의 자리(ZSET 점수)는 처음부터 끝까지 한 번도 바뀌지 않았다.
-	if got, ok := h.inZSet(keys.Queue(h.event, h.shard), "tokBehind"); !ok || int64(got) != behindRank {
+	if got, ok := h.inZSet(keys.Queue(h.event, h.shard), behind); !ok || int64(got) != behindRank {
 		t.Fatalf("ZSET 점수 = %v (%v), want %d — 보존되는 것은 이쪽이다", got, ok, behindRank)
 	}
 }
