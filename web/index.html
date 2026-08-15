@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShardGate 대기실</title>
+<meta name="description" content="샤딩 기반 가상 대기열. 당신이 어느 구역에 있고 몇 번째인지 보여줍니다.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%230B5D51'/><rect x='3' y='6' width='3' height='4' fill='%23fff'/><rect x='7' y='6' width='3' height='4' fill='%23fff' opacity='.5'/></svg>">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- 상단 보드. 게이트 안내판처럼 이벤트와 연결 상태만 얹는다. -->
+<header class="board">
+  <div class="board__mark">SHARDGATE</div>
+  <div class="board__event" id="eventName">이벤트 확인 중</div>
+  <div class="board__link" id="linkState" data-state="idle">
+    <span class="board__dot" aria-hidden="true"></span>
+    <span id="linkLabel">대기</span>
+  </div>
+</header>
+
+<main class="hall">
+
+  <!-- 히어로: 왼쪽이 내 구역(샤드), 오른쪽이 내 순번. -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <h1 class="sr-only" id="heroTitle">대기실</h1>
+
+    <div class="room" id="room" data-state="idle">
+      <div class="room__head">
+        <span class="eyebrow">당신의 구역</span>
+        <span class="room__id mono" id="shardID">—</span>
+      </div>
+
+      <!-- 시그니처: 샤드 한 칸이 사람 한 명(또는 N명)이다.
+           500,000명의 줄이 아니라 1,000명의 방이라는 것이 이 설계의 전부다. -->
+      <div class="plate" id="plate" role="img" aria-labelledby="plateNote"></div>
+
+      <p class="room__note" id="plateNote">진입하면 배정된 구역이 여기 그려집니다.</p>
+    </div>
+
+    <div class="ticket" id="ticket" data-state="idle">
+      <div class="ticket__label eyebrow" id="ticketLabel">대기 순번</div>
+      <div class="ticket__number mono" id="rank">—</div>
+      <dl class="ticket__facts">
+        <div><dt>앞에</dt><dd class="mono" id="ahead">—</dd></div>
+        <div><dt>예상</dt><dd class="mono" id="estimate">—</dd></div>
+        <div><dt>남은 인원</dt><dd class="mono" id="shardSize">—</dd></div>
+      </dl>
+      <p class="ticket__msg" id="ticketMsg">아래 버튼을 눌러 대기열에 들어가세요.</p>
+      <button class="btn" id="action" type="button">대기열 참여</button>
+    </div>
+  </section>
+
+  <!-- 진행 단계. 순서가 실제로 의미를 갖는 흐름이라 번호를 붙인다. -->
+  <nav class="rail" aria-label="진행 단계">
+    <ol class="rail__list" id="rail">
+      <li class="rail__step" data-step="challenge"><span class="rail__no">1</span><span class="rail__name">확인</span></li>
+      <li class="rail__step" data-step="waiting"><span class="rail__no">2</span><span class="rail__name">대기</span></li>
+      <li class="rail__step" data-step="admitted"><span class="rail__no">3</span><span class="rail__name">입장</span></li>
+      <li class="rail__step" data-step="ordered"><span class="rail__no">4</span><span class="rail__name">구매</span></li>
+    </ol>
+  </nav>
+
+  <!-- 기록. 대기실이 무엇을 하고 있는지 그대로 보여준다. -->
+  <section class="log" aria-labelledby="logTitle">
+    <h2 class="eyebrow" id="logTitle">기록</h2>
+    <ul class="log__list" id="log"></ul>
+  </section>
+
+  <footer class="foot">
+    <p>
+      순번은 서버가 정합니다. 이 페이지는 표시만 하며, 새로고침해도 순번은 그대로입니다.
+    </p>
+    <p class="foot__meta mono" id="meta">—</p>
+  </footer>
+</main>
+
+<script src="sha256.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

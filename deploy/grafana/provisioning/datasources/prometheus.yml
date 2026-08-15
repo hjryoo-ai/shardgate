@@ -1,0 +1,11 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    # uid 를 고정한다 — 대시보드 JSON 이 이 값을 참조하므로 자동 생성되면 패널이 깨진다.
+    uid: prometheus
+    access: proxy
+    url: http://prometheus:9090
+    isDefault: true
+    editable: false

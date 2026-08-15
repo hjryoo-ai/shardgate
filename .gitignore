@@ -1,0 +1,11 @@
+bin/
+coverage.out
+*.test
+.env
+# 측정 산출물 — 결과 JSON 과 재현 매니페스트는 **저장소에 남긴다**(합쳐 260KB).
+# REPORT.md 의 표를 저장소 안에서 검증할 수 있어야 하고, report.py 를 그 파일들에
+# 다시 돌리면 같은 평균과 신뢰구간이 나온다. 원본 트레이스와 k6 로그는 161MB 라 제외한다.
+loadtest/results/**/*.trace.tsv
+loadtest/results/**/*.trace.log
+loadtest/results/**/*.k6.log
+.DS_Store

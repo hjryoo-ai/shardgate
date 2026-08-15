@@ -1,0 +1,1521 @@
+
+         /\      Grafana   /‾‾/  
+    /\  /  \     |\  __   /  /   
+   /  \/    \    | |/ /  /   ‾‾\ 
+  /          \   |   (  |  (‾)  |
+ / __________ \  |_|\_\  \_____/ 
+
+
+     execution: local
+        script: loadtest/k6/mixed.js
+        output: -
+
+     scenarios: (100.00%) 4 scenarios, 400 max VUs, 6m0s max duration (incl. graceful stop):
+              * distributed: 1 iterations for each of 40 VUs (maxDuration: 5m30s, exec: distributed, gracefulStop: 30s)
+              * humans: 1 iterations for each of 280 VUs (maxDuration: 5m30s, exec: human, gracefulStop: 30s)
+              * mimic: 1 iterations for each of 40 VUs (maxDuration: 5m30s, exec: mimic, gracefulStop: 30s)
+              * naive: 1 iterations for each of 40 VUs (maxDuration: 5m30s, exec: naive, gracefulStop: 30s)
+
+
+running (0m00.9s), 400/400 VUs, 0 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m00.9s/5m30s  00/40 iters, 1 per VU
+humans        [   0% ] 280 VUs  0m00.9s/5m30s  000/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m00.9s/5m30s  00/40 iters, 1 per VU
+naive         [   0% ] 40 VUs   0m00.9s/5m30s  00/40 iters, 1 per VU
+
+running (0m01.9s), 400/400 VUs, 0 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m01.9s/5m30s  00/40 iters, 1 per VU
+humans        [   0% ] 280 VUs  0m01.9s/5m30s  000/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m01.9s/5m30s  00/40 iters, 1 per VU
+naive         [   0% ] 40 VUs   0m01.9s/5m30s  00/40 iters, 1 per VU
+
+running (0m02.9s), 400/400 VUs, 0 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m02.9s/5m30s  00/40 iters, 1 per VU
+humans        [   0% ] 280 VUs  0m02.9s/5m30s  000/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m02.9s/5m30s  00/40 iters, 1 per VU
+naive         [   0% ] 40 VUs   0m02.9s/5m30s  00/40 iters, 1 per VU
+
+running (0m03.9s), 400/400 VUs, 0 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m03.9s/5m30s  00/40 iters, 1 per VU
+humans        [   0% ] 280 VUs  0m03.9s/5m30s  000/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m03.9s/5m30s  00/40 iters, 1 per VU
+naive         [   0% ] 40 VUs   0m03.9s/5m30s  00/40 iters, 1 per VU
+
+running (0m04.9s), 398/400 VUs, 2 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m04.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m04.9s/5m30s  002/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m04.9s/5m30s  00/40 iters, 1 per VU
+naive         [   0% ] 40 VUs   0m04.9s/5m30s  00/40 iters, 1 per VU
+
+running (0m05.9s), 397/400 VUs, 3 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m05.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m05.9s/5m30s  002/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m05.9s/5m30s  00/40 iters, 1 per VU
+naive         [   2% ] 40 VUs   0m05.9s/5m30s  01/40 iters, 1 per VU
+
+running (0m06.9s), 397/400 VUs, 3 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m06.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m06.9s/5m30s  002/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m06.9s/5m30s  00/40 iters, 1 per VU
+naive         [   2% ] 40 VUs   0m06.9s/5m30s  01/40 iters, 1 per VU
+
+running (0m07.9s), 397/400 VUs, 3 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m07.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m07.9s/5m30s  002/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m07.9s/5m30s  00/40 iters, 1 per VU
+naive         [   2% ] 40 VUs   0m07.9s/5m30s  01/40 iters, 1 per VU
+
+running (0m08.9s), 396/400 VUs, 4 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m08.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m08.9s/5m30s  003/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m08.9s/5m30s  00/40 iters, 1 per VU
+naive         [   2% ] 40 VUs   0m08.9s/5m30s  01/40 iters, 1 per VU
+
+running (0m09.9s), 396/400 VUs, 4 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m09.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m09.9s/5m30s  003/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m09.9s/5m30s  00/40 iters, 1 per VU
+naive         [   2% ] 40 VUs   0m09.9s/5m30s  01/40 iters, 1 per VU
+
+running (0m10.9s), 394/400 VUs, 6 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m10.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m10.9s/5m30s  004/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m10.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m10.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m11.9s), 394/400 VUs, 6 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m11.9s/5m30s  00/40 iters, 1 per VU
+humans        [   1% ] 280 VUs  0m11.9s/5m30s  004/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m11.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m11.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m12.9s), 393/400 VUs, 7 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m12.9s/5m30s  00/40 iters, 1 per VU
+humans        [   2% ] 280 VUs  0m12.9s/5m30s  005/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m12.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m12.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m13.9s), 393/400 VUs, 7 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m13.9s/5m30s  00/40 iters, 1 per VU
+humans        [   2% ] 280 VUs  0m13.9s/5m30s  005/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m13.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m13.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m14.9s), 393/400 VUs, 7 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m14.9s/5m30s  00/40 iters, 1 per VU
+humans        [   2% ] 280 VUs  0m14.9s/5m30s  005/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m14.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m14.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m15.9s), 391/400 VUs, 9 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m15.9s/5m30s  00/40 iters, 1 per VU
+humans        [   2% ] 280 VUs  0m15.9s/5m30s  007/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m15.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m15.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m16.9s), 390/400 VUs, 10 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m16.9s/5m30s  00/40 iters, 1 per VU
+humans        [   3% ] 280 VUs  0m16.9s/5m30s  008/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m16.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m16.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m17.9s), 389/400 VUs, 11 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m17.9s/5m30s  00/40 iters, 1 per VU
+humans        [   3% ] 280 VUs  0m17.9s/5m30s  009/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m17.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m17.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m18.9s), 388/400 VUs, 12 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m18.9s/5m30s  00/40 iters, 1 per VU
+humans        [   4% ] 280 VUs  0m18.9s/5m30s  010/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m18.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m18.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m19.9s), 388/400 VUs, 12 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m19.9s/5m30s  00/40 iters, 1 per VU
+humans        [   4% ] 280 VUs  0m19.9s/5m30s  010/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m19.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m19.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m20.9s), 387/400 VUs, 13 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m20.9s/5m30s  00/40 iters, 1 per VU
+humans        [   4% ] 280 VUs  0m20.9s/5m30s  011/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m20.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m20.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m21.9s), 387/400 VUs, 13 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m21.9s/5m30s  00/40 iters, 1 per VU
+humans        [   4% ] 280 VUs  0m21.9s/5m30s  011/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m21.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m21.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m22.9s), 385/400 VUs, 15 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m22.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m22.9s/5m30s  013/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m22.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m22.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m23.9s), 385/400 VUs, 15 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m23.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m23.9s/5m30s  013/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m23.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m23.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m24.9s), 384/400 VUs, 16 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m24.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m24.9s/5m30s  014/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m24.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m24.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m25.9s), 383/400 VUs, 17 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m25.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m25.9s/5m30s  015/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m25.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m25.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m26.9s), 383/400 VUs, 17 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m26.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m26.9s/5m30s  015/280 iters, 1 per VU
+mimic         [   0% ] 40 VUs   0m26.9s/5m30s  00/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m26.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m27.9s), 382/400 VUs, 18 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m27.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m27.9s/5m30s  015/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m27.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m27.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m28.9s), 382/400 VUs, 18 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m28.9s/5m30s  00/40 iters, 1 per VU
+humans        [   5% ] 280 VUs  0m28.9s/5m30s  015/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m28.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m28.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m29.9s), 381/400 VUs, 19 complete and 0 interrupted iterations
+distributed   [   0% ] 40 VUs   0m29.9s/5m30s  00/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m29.9s/5m30s  016/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m29.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m29.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m30.9s), 379/400 VUs, 21 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m30.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m30.9s/5m30s  016/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m30.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m30.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m31.9s), 379/400 VUs, 21 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m31.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m31.9s/5m30s  016/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m31.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m31.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m32.9s), 379/400 VUs, 21 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m32.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m32.9s/5m30s  016/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m32.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m32.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m33.9s), 379/400 VUs, 21 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m33.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m33.9s/5m30s  016/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m33.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m33.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m34.9s), 379/400 VUs, 21 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m34.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m34.9s/5m30s  016/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m34.9s/5m30s  01/40 iters, 1 per VU
+naive         [   5% ] 40 VUs   0m34.9s/5m30s  02/40 iters, 1 per VU
+
+running (0m35.9s), 377/400 VUs, 23 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m35.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m35.9s/5m30s  017/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m35.9s/5m30s  01/40 iters, 1 per VU
+naive         [   8% ] 40 VUs   0m35.9s/5m30s  03/40 iters, 1 per VU
+
+running (0m36.9s), 377/400 VUs, 23 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m36.9s/5m30s  02/40 iters, 1 per VU
+humans        [   6% ] 280 VUs  0m36.9s/5m30s  017/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m36.9s/5m30s  01/40 iters, 1 per VU
+naive         [   8% ] 40 VUs   0m36.9s/5m30s  03/40 iters, 1 per VU
+
+running (0m37.9s), 375/400 VUs, 25 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m37.9s/5m30s  02/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m37.9s/5m30s  019/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m37.9s/5m30s  01/40 iters, 1 per VU
+naive         [   8% ] 40 VUs   0m37.9s/5m30s  03/40 iters, 1 per VU
+
+running (0m38.9s), 375/400 VUs, 25 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m38.9s/5m30s  02/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m38.9s/5m30s  019/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m38.9s/5m30s  01/40 iters, 1 per VU
+naive         [   8% ] 40 VUs   0m38.9s/5m30s  03/40 iters, 1 per VU
+
+running (0m39.9s), 375/400 VUs, 25 complete and 0 interrupted iterations
+distributed   [   5% ] 40 VUs   0m39.9s/5m30s  02/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m39.9s/5m30s  019/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m39.9s/5m30s  01/40 iters, 1 per VU
+naive         [   8% ] 40 VUs   0m39.9s/5m30s  03/40 iters, 1 per VU
+
+running (0m40.9s), 373/400 VUs, 27 complete and 0 interrupted iterations
+distributed   [   8% ] 40 VUs   0m40.9s/5m30s  03/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m40.9s/5m30s  019/280 iters, 1 per VU
+mimic         [   2% ] 40 VUs   0m40.9s/5m30s  01/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m40.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m41.9s), 372/400 VUs, 28 complete and 0 interrupted iterations
+distributed   [   8% ] 40 VUs   0m41.9s/5m30s  03/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m41.9s/5m30s  019/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m41.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m41.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m42.9s), 372/400 VUs, 28 complete and 0 interrupted iterations
+distributed   [   8% ] 40 VUs   0m42.9s/5m30s  03/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m42.9s/5m30s  019/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m42.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m42.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m43.9s), 371/400 VUs, 29 complete and 0 interrupted iterations
+distributed   [   8% ] 40 VUs   0m43.9s/5m30s  03/40 iters, 1 per VU
+humans        [   7% ] 280 VUs  0m43.9s/5m30s  020/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m43.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m43.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m44.9s), 370/400 VUs, 30 complete and 0 interrupted iterations
+distributed   [   8% ] 40 VUs   0m44.9s/5m30s  03/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m44.9s/5m30s  021/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m44.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m44.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m45.9s), 369/400 VUs, 31 complete and 0 interrupted iterations
+distributed   [  10% ] 40 VUs   0m45.9s/5m30s  04/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m45.9s/5m30s  021/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m45.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m45.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m46.9s), 369/400 VUs, 31 complete and 0 interrupted iterations
+distributed   [  10% ] 40 VUs   0m46.9s/5m30s  04/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m46.9s/5m30s  021/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m46.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m46.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m47.9s), 367/400 VUs, 33 complete and 0 interrupted iterations
+distributed   [  10% ] 40 VUs   0m47.9s/5m30s  04/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m47.9s/5m30s  023/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m47.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m47.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m48.9s), 367/400 VUs, 33 complete and 0 interrupted iterations
+distributed   [  10% ] 40 VUs   0m48.9s/5m30s  04/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m48.9s/5m30s  023/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m48.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m48.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m49.9s), 367/400 VUs, 33 complete and 0 interrupted iterations
+distributed   [  10% ] 40 VUs   0m49.9s/5m30s  04/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m49.9s/5m30s  023/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m49.9s/5m30s  02/40 iters, 1 per VU
+naive         [  10% ] 40 VUs   0m49.9s/5m30s  04/40 iters, 1 per VU
+
+running (0m50.9s), 365/400 VUs, 35 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m50.9s/5m30s  05/40 iters, 1 per VU
+humans        [   8% ] 280 VUs  0m50.9s/5m30s  023/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m50.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m50.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m51.9s), 364/400 VUs, 36 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m51.9s/5m30s  05/40 iters, 1 per VU
+humans        [   9% ] 280 VUs  0m51.9s/5m30s  024/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m51.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m51.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m52.9s), 364/400 VUs, 36 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m52.9s/5m30s  05/40 iters, 1 per VU
+humans        [   9% ] 280 VUs  0m52.9s/5m30s  024/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m52.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m52.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m53.9s), 364/400 VUs, 36 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m53.9s/5m30s  05/40 iters, 1 per VU
+humans        [   9% ] 280 VUs  0m53.9s/5m30s  024/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m53.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m53.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m54.9s), 363/400 VUs, 37 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m54.9s/5m30s  05/40 iters, 1 per VU
+humans        [   9% ] 280 VUs  0m54.9s/5m30s  025/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m54.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m54.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m55.9s), 363/400 VUs, 37 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m55.9s/5m30s  05/40 iters, 1 per VU
+humans        [   9% ] 280 VUs  0m55.9s/5m30s  025/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m55.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m55.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m56.9s), 361/400 VUs, 39 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m56.9s/5m30s  05/40 iters, 1 per VU
+humans        [  10% ] 280 VUs  0m56.9s/5m30s  027/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m56.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m56.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m57.9s), 361/400 VUs, 39 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m57.9s/5m30s  05/40 iters, 1 per VU
+humans        [  10% ] 280 VUs  0m57.9s/5m30s  027/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m57.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m57.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m58.9s), 360/400 VUs, 40 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m58.9s/5m30s  05/40 iters, 1 per VU
+humans        [  10% ] 280 VUs  0m58.9s/5m30s  028/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m58.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m58.9s/5m30s  05/40 iters, 1 per VU
+
+running (0m59.9s), 359/400 VUs, 41 complete and 0 interrupted iterations
+distributed   [  12% ] 40 VUs   0m59.9s/5m30s  05/40 iters, 1 per VU
+humans        [  10% ] 280 VUs  0m59.9s/5m30s  029/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   0m59.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   0m59.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m00.9s), 357/400 VUs, 43 complete and 0 interrupted iterations
+distributed   [  18% ] 40 VUs   1m00.9s/5m30s  07/40 iters, 1 per VU
+humans        [  10% ] 280 VUs  1m00.9s/5m30s  029/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m00.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m00.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m01.9s), 356/400 VUs, 44 complete and 0 interrupted iterations
+distributed   [  18% ] 40 VUs   1m01.9s/5m30s  07/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m01.9s/5m30s  030/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m01.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m01.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m02.9s), 356/400 VUs, 44 complete and 0 interrupted iterations
+distributed   [  18% ] 40 VUs   1m02.9s/5m30s  07/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m02.9s/5m30s  030/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m02.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m02.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m03.9s), 356/400 VUs, 44 complete and 0 interrupted iterations
+distributed   [  18% ] 40 VUs   1m03.9s/5m30s  07/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m03.9s/5m30s  030/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m03.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m03.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m04.9s), 356/400 VUs, 44 complete and 0 interrupted iterations
+distributed   [  18% ] 40 VUs   1m04.9s/5m30s  07/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m04.9s/5m30s  030/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m04.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m04.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m05.9s), 354/400 VUs, 46 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m05.9s/5m30s  08/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m05.9s/5m30s  031/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m05.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m05.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m06.9s), 354/400 VUs, 46 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m06.9s/5m30s  08/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m06.9s/5m30s  031/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m06.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m06.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m07.9s), 353/400 VUs, 47 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m07.9s/5m30s  08/40 iters, 1 per VU
+humans        [  11% ] 280 VUs  1m07.9s/5m30s  032/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m07.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m07.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m08.9s), 351/400 VUs, 49 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m08.9s/5m30s  08/40 iters, 1 per VU
+humans        [  12% ] 280 VUs  1m08.9s/5m30s  034/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m08.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m08.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m09.9s), 349/400 VUs, 51 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m09.9s/5m30s  08/40 iters, 1 per VU
+humans        [  13% ] 280 VUs  1m09.9s/5m30s  036/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m09.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m09.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m10.9s), 349/400 VUs, 51 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m10.9s/5m30s  08/40 iters, 1 per VU
+humans        [  13% ] 280 VUs  1m10.9s/5m30s  036/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m10.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m10.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m11.9s), 349/400 VUs, 51 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m11.9s/5m30s  08/40 iters, 1 per VU
+humans        [  13% ] 280 VUs  1m11.9s/5m30s  036/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m11.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m11.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m12.9s), 348/400 VUs, 52 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m12.9s/5m30s  08/40 iters, 1 per VU
+humans        [  13% ] 280 VUs  1m12.9s/5m30s  037/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m12.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m12.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m13.9s), 348/400 VUs, 52 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m13.9s/5m30s  08/40 iters, 1 per VU
+humans        [  13% ] 280 VUs  1m13.9s/5m30s  037/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m13.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m13.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m14.9s), 348/400 VUs, 52 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m14.9s/5m30s  08/40 iters, 1 per VU
+humans        [  13% ] 280 VUs  1m14.9s/5m30s  037/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m14.9s/5m30s  02/40 iters, 1 per VU
+naive         [  12% ] 40 VUs   1m14.9s/5m30s  05/40 iters, 1 per VU
+
+running (1m15.9s), 346/400 VUs, 54 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m15.9s/5m30s  08/40 iters, 1 per VU
+humans        [  14% ] 280 VUs  1m15.9s/5m30s  038/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m15.9s/5m30s  02/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m15.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m16.9s), 346/400 VUs, 54 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m16.9s/5m30s  08/40 iters, 1 per VU
+humans        [  14% ] 280 VUs  1m16.9s/5m30s  038/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m16.9s/5m30s  02/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m16.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m17.9s), 346/400 VUs, 54 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m17.9s/5m30s  08/40 iters, 1 per VU
+humans        [  14% ] 280 VUs  1m17.9s/5m30s  038/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m17.9s/5m30s  02/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m17.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m18.9s), 346/400 VUs, 54 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m18.9s/5m30s  08/40 iters, 1 per VU
+humans        [  14% ] 280 VUs  1m18.9s/5m30s  038/280 iters, 1 per VU
+mimic         [   5% ] 40 VUs   1m18.9s/5m30s  02/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m18.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m19.9s), 344/400 VUs, 56 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m19.9s/5m30s  08/40 iters, 1 per VU
+humans        [  14% ] 280 VUs  1m19.9s/5m30s  039/280 iters, 1 per VU
+mimic         [   8% ] 40 VUs   1m19.9s/5m30s  03/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m19.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m20.9s), 342/400 VUs, 58 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m20.9s/5m30s  08/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m20.9s/5m30s  041/280 iters, 1 per VU
+mimic         [   8% ] 40 VUs   1m20.9s/5m30s  03/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m20.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m21.9s), 341/400 VUs, 59 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m21.9s/5m30s  08/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m21.9s/5m30s  042/280 iters, 1 per VU
+mimic         [   8% ] 40 VUs   1m21.9s/5m30s  03/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m21.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m22.9s), 341/400 VUs, 59 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m22.9s/5m30s  08/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m22.9s/5m30s  042/280 iters, 1 per VU
+mimic         [   8% ] 40 VUs   1m22.9s/5m30s  03/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m22.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m23.9s), 341/400 VUs, 59 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m23.9s/5m30s  08/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m23.9s/5m30s  042/280 iters, 1 per VU
+mimic         [   8% ] 40 VUs   1m23.9s/5m30s  03/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m23.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m24.9s), 341/400 VUs, 59 complete and 0 interrupted iterations
+distributed   [  20% ] 40 VUs   1m24.9s/5m30s  08/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m24.9s/5m30s  042/280 iters, 1 per VU
+mimic         [   8% ] 40 VUs   1m24.9s/5m30s  03/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m24.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m25.9s), 338/400 VUs, 62 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m25.9s/5m30s  09/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m25.9s/5m30s  042/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m25.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m25.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m26.9s), 338/400 VUs, 62 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m26.9s/5m30s  09/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m26.9s/5m30s  042/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m26.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m26.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m27.9s), 338/400 VUs, 62 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m27.9s/5m30s  09/40 iters, 1 per VU
+humans        [  15% ] 280 VUs  1m27.9s/5m30s  042/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m27.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m27.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m28.9s), 336/400 VUs, 64 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m28.9s/5m30s  09/40 iters, 1 per VU
+humans        [  16% ] 280 VUs  1m28.9s/5m30s  044/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m28.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m28.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m29.9s), 334/400 VUs, 66 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m29.9s/5m30s  09/40 iters, 1 per VU
+humans        [  16% ] 280 VUs  1m29.9s/5m30s  046/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m29.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m29.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m30.9s), 334/400 VUs, 66 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m30.9s/5m30s  09/40 iters, 1 per VU
+humans        [  16% ] 280 VUs  1m30.9s/5m30s  046/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m30.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m30.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m31.9s), 334/400 VUs, 66 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m31.9s/5m30s  09/40 iters, 1 per VU
+humans        [  16% ] 280 VUs  1m31.9s/5m30s  046/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m31.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m31.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m32.9s), 334/400 VUs, 66 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m32.9s/5m30s  09/40 iters, 1 per VU
+humans        [  16% ] 280 VUs  1m32.9s/5m30s  046/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m32.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m32.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m33.9s), 333/400 VUs, 67 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m33.9s/5m30s  09/40 iters, 1 per VU
+humans        [  17% ] 280 VUs  1m33.9s/5m30s  047/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m33.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m33.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m34.9s), 333/400 VUs, 67 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m34.9s/5m30s  09/40 iters, 1 per VU
+humans        [  17% ] 280 VUs  1m34.9s/5m30s  047/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m34.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m34.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m35.9s), 332/400 VUs, 68 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m35.9s/5m30s  09/40 iters, 1 per VU
+humans        [  17% ] 280 VUs  1m35.9s/5m30s  048/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m35.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m35.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m36.9s), 332/400 VUs, 68 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m36.9s/5m30s  09/40 iters, 1 per VU
+humans        [  17% ] 280 VUs  1m36.9s/5m30s  048/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m36.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m36.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m37.9s), 331/400 VUs, 69 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m37.9s/5m30s  09/40 iters, 1 per VU
+humans        [  18% ] 280 VUs  1m37.9s/5m30s  049/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m37.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m37.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m38.9s), 329/400 VUs, 71 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m38.9s/5m30s  09/40 iters, 1 per VU
+humans        [  18% ] 280 VUs  1m38.9s/5m30s  051/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m38.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m38.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m39.9s), 328/400 VUs, 72 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m39.9s/5m30s  09/40 iters, 1 per VU
+humans        [  19% ] 280 VUs  1m39.9s/5m30s  052/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m39.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m39.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m40.9s), 327/400 VUs, 73 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m40.9s/5m30s  09/40 iters, 1 per VU
+humans        [  19% ] 280 VUs  1m40.9s/5m30s  053/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m40.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m40.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m41.9s), 327/400 VUs, 73 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m41.9s/5m30s  09/40 iters, 1 per VU
+humans        [  19% ] 280 VUs  1m41.9s/5m30s  053/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m41.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m41.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m42.9s), 326/400 VUs, 74 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m42.9s/5m30s  09/40 iters, 1 per VU
+humans        [  19% ] 280 VUs  1m42.9s/5m30s  054/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m42.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m42.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m43.9s), 325/400 VUs, 75 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m43.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m43.9s/5m30s  055/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m43.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m43.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m44.9s), 325/400 VUs, 75 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m44.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m44.9s/5m30s  055/280 iters, 1 per VU
+mimic         [  12% ] 40 VUs   1m44.9s/5m30s  05/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m44.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m45.9s), 323/400 VUs, 77 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m45.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m45.9s/5m30s  055/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m45.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m45.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m46.9s), 323/400 VUs, 77 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m46.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m46.9s/5m30s  055/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m46.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m46.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m47.9s), 323/400 VUs, 77 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m47.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m47.9s/5m30s  055/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m47.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m47.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m48.9s), 321/400 VUs, 79 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m48.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m48.9s/5m30s  057/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m48.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m48.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m49.9s), 321/400 VUs, 79 complete and 0 interrupted iterations
+distributed   [  22% ] 40 VUs   1m49.9s/5m30s  09/40 iters, 1 per VU
+humans        [  20% ] 280 VUs  1m49.9s/5m30s  057/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m49.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m49.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m50.9s), 319/400 VUs, 81 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m50.9s/5m30s  10/40 iters, 1 per VU
+humans        [  21% ] 280 VUs  1m50.9s/5m30s  058/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m50.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m50.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m51.9s), 319/400 VUs, 81 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m51.9s/5m30s  10/40 iters, 1 per VU
+humans        [  21% ] 280 VUs  1m51.9s/5m30s  058/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m51.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m51.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m52.9s), 319/400 VUs, 81 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m52.9s/5m30s  10/40 iters, 1 per VU
+humans        [  21% ] 280 VUs  1m52.9s/5m30s  058/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m52.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m52.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m53.9s), 319/400 VUs, 81 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m53.9s/5m30s  10/40 iters, 1 per VU
+humans        [  21% ] 280 VUs  1m53.9s/5m30s  058/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m53.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m53.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m54.9s), 319/400 VUs, 81 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m54.9s/5m30s  10/40 iters, 1 per VU
+humans        [  21% ] 280 VUs  1m54.9s/5m30s  058/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m54.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m54.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m55.9s), 318/400 VUs, 82 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m55.9s/5m30s  10/40 iters, 1 per VU
+humans        [  21% ] 280 VUs  1m55.9s/5m30s  059/280 iters, 1 per VU
+mimic         [  18% ] 40 VUs   1m55.9s/5m30s  07/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m55.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m56.9s), 315/400 VUs, 85 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m56.9s/5m30s  10/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  1m56.9s/5m30s  061/280 iters, 1 per VU
+mimic         [  20% ] 40 VUs   1m56.9s/5m30s  08/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m56.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m57.9s), 314/400 VUs, 86 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m57.9s/5m30s  10/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  1m57.9s/5m30s  062/280 iters, 1 per VU
+mimic         [  20% ] 40 VUs   1m57.9s/5m30s  08/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m57.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m58.9s), 314/400 VUs, 86 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m58.9s/5m30s  10/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  1m58.9s/5m30s  062/280 iters, 1 per VU
+mimic         [  20% ] 40 VUs   1m58.9s/5m30s  08/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m58.9s/5m30s  06/40 iters, 1 per VU
+
+running (1m59.9s), 314/400 VUs, 86 complete and 0 interrupted iterations
+distributed   [  25% ] 40 VUs   1m59.9s/5m30s  10/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  1m59.9s/5m30s  062/280 iters, 1 per VU
+mimic         [  20% ] 40 VUs   1m59.9s/5m30s  08/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   1m59.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m00.9s), 312/400 VUs, 88 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m00.9s/5m30s  11/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  2m00.9s/5m30s  062/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m00.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m00.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m01.9s), 312/400 VUs, 88 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m01.9s/5m30s  11/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  2m01.9s/5m30s  062/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m01.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m01.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m02.9s), 312/400 VUs, 88 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m02.9s/5m30s  11/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  2m02.9s/5m30s  062/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m02.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m02.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m03.9s), 311/400 VUs, 89 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m03.9s/5m30s  11/40 iters, 1 per VU
+humans        [  22% ] 280 VUs  2m03.9s/5m30s  063/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m03.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m03.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m04.9s), 310/400 VUs, 90 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m04.9s/5m30s  11/40 iters, 1 per VU
+humans        [  23% ] 280 VUs  2m04.9s/5m30s  064/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m04.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m04.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m05.9s), 308/400 VUs, 92 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m05.9s/5m30s  11/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m05.9s/5m30s  066/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m05.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m05.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m06.9s), 308/400 VUs, 92 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m06.9s/5m30s  11/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m06.9s/5m30s  066/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m06.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m06.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m07.9s), 307/400 VUs, 93 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m07.9s/5m30s  11/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m07.9s/5m30s  067/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m07.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m07.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m08.9s), 307/400 VUs, 93 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m08.9s/5m30s  11/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m08.9s/5m30s  067/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m08.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m08.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m09.9s), 307/400 VUs, 93 complete and 0 interrupted iterations
+distributed   [  28% ] 40 VUs   2m09.9s/5m30s  11/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m09.9s/5m30s  067/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m09.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m09.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m10.9s), 306/400 VUs, 94 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m10.9s/5m30s  12/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m10.9s/5m30s  067/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m10.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m10.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m11.9s), 305/400 VUs, 95 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m11.9s/5m30s  12/40 iters, 1 per VU
+humans        [  24% ] 280 VUs  2m11.9s/5m30s  068/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m11.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m11.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m12.9s), 304/400 VUs, 96 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m12.9s/5m30s  12/40 iters, 1 per VU
+humans        [  25% ] 280 VUs  2m12.9s/5m30s  069/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m12.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m12.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m13.9s), 302/400 VUs, 98 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m13.9s/5m30s  12/40 iters, 1 per VU
+humans        [  25% ] 280 VUs  2m13.9s/5m30s  071/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m13.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m13.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m14.9s), 301/400 VUs, 99 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m14.9s/5m30s  12/40 iters, 1 per VU
+humans        [  26% ] 280 VUs  2m14.9s/5m30s  072/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m14.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m14.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m15.9s), 301/400 VUs, 99 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m15.9s/5m30s  12/40 iters, 1 per VU
+humans        [  26% ] 280 VUs  2m15.9s/5m30s  072/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m15.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m15.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m16.9s), 299/400 VUs, 101 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m16.9s/5m30s  12/40 iters, 1 per VU
+humans        [  26% ] 280 VUs  2m16.9s/5m30s  074/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m16.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m16.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m17.9s), 298/400 VUs, 102 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m17.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m17.9s/5m30s  075/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m17.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m17.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m18.9s), 298/400 VUs, 102 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m18.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m18.9s/5m30s  075/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m18.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m18.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m19.9s), 298/400 VUs, 102 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m19.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m19.9s/5m30s  075/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m19.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m19.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m20.9s), 297/400 VUs, 103 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m20.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m20.9s/5m30s  076/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m20.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m20.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m21.9s), 297/400 VUs, 103 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m21.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m21.9s/5m30s  076/280 iters, 1 per VU
+mimic         [  22% ] 40 VUs   2m21.9s/5m30s  09/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m21.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m22.9s), 296/400 VUs, 104 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m22.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m22.9s/5m30s  076/280 iters, 1 per VU
+mimic         [  25% ] 40 VUs   2m22.9s/5m30s  10/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m22.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m23.9s), 296/400 VUs, 104 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m23.9s/5m30s  12/40 iters, 1 per VU
+humans        [  27% ] 280 VUs  2m23.9s/5m30s  076/280 iters, 1 per VU
+mimic         [  25% ] 40 VUs   2m23.9s/5m30s  10/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m23.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m24.9s), 295/400 VUs, 105 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m24.9s/5m30s  12/40 iters, 1 per VU
+humans        [  28% ] 280 VUs  2m24.9s/5m30s  077/280 iters, 1 per VU
+mimic         [  25% ] 40 VUs   2m24.9s/5m30s  10/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m24.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m25.9s), 294/400 VUs, 106 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m25.9s/5m30s  12/40 iters, 1 per VU
+humans        [  28% ] 280 VUs  2m25.9s/5m30s  077/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m25.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m25.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m26.9s), 294/400 VUs, 106 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m26.9s/5m30s  12/40 iters, 1 per VU
+humans        [  28% ] 280 VUs  2m26.9s/5m30s  077/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m26.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m26.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m27.9s), 294/400 VUs, 106 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m27.9s/5m30s  12/40 iters, 1 per VU
+humans        [  28% ] 280 VUs  2m27.9s/5m30s  077/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m27.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m27.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m28.9s), 292/400 VUs, 108 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m28.9s/5m30s  12/40 iters, 1 per VU
+humans        [  28% ] 280 VUs  2m28.9s/5m30s  079/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m28.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m28.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m29.9s), 292/400 VUs, 108 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m29.9s/5m30s  12/40 iters, 1 per VU
+humans        [  28% ] 280 VUs  2m29.9s/5m30s  079/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m29.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m29.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m30.9s), 290/400 VUs, 110 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m30.9s/5m30s  12/40 iters, 1 per VU
+humans        [  29% ] 280 VUs  2m30.9s/5m30s  081/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m30.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m30.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m31.9s), 290/400 VUs, 110 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m31.9s/5m30s  12/40 iters, 1 per VU
+humans        [  29% ] 280 VUs  2m31.9s/5m30s  081/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m31.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m31.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m32.9s), 289/400 VUs, 111 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m32.9s/5m30s  12/40 iters, 1 per VU
+humans        [  29% ] 280 VUs  2m32.9s/5m30s  082/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m32.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m32.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m33.9s), 289/400 VUs, 111 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m33.9s/5m30s  12/40 iters, 1 per VU
+humans        [  29% ] 280 VUs  2m33.9s/5m30s  082/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m33.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m33.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m34.9s), 288/400 VUs, 112 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m34.9s/5m30s  12/40 iters, 1 per VU
+humans        [  30% ] 280 VUs  2m34.9s/5m30s  083/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m34.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m34.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m35.9s), 286/400 VUs, 114 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m35.9s/5m30s  12/40 iters, 1 per VU
+humans        [  30% ] 280 VUs  2m35.9s/5m30s  085/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m35.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m35.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m36.9s), 286/400 VUs, 114 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m36.9s/5m30s  12/40 iters, 1 per VU
+humans        [  30% ] 280 VUs  2m36.9s/5m30s  085/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m36.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m36.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m37.9s), 284/400 VUs, 116 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m37.9s/5m30s  12/40 iters, 1 per VU
+humans        [  31% ] 280 VUs  2m37.9s/5m30s  087/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m37.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m37.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m38.9s), 283/400 VUs, 117 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m38.9s/5m30s  12/40 iters, 1 per VU
+humans        [  31% ] 280 VUs  2m38.9s/5m30s  088/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m38.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m38.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m39.9s), 283/400 VUs, 117 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m39.9s/5m30s  12/40 iters, 1 per VU
+humans        [  31% ] 280 VUs  2m39.9s/5m30s  088/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m39.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m39.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m40.9s), 282/400 VUs, 118 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m40.9s/5m30s  12/40 iters, 1 per VU
+humans        [  32% ] 280 VUs  2m40.9s/5m30s  089/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m40.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m40.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m41.9s), 281/400 VUs, 119 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m41.9s/5m30s  12/40 iters, 1 per VU
+humans        [  32% ] 280 VUs  2m41.9s/5m30s  090/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m41.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m41.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m42.9s), 281/400 VUs, 119 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m42.9s/5m30s  12/40 iters, 1 per VU
+humans        [  32% ] 280 VUs  2m42.9s/5m30s  090/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m42.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m42.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m43.9s), 281/400 VUs, 119 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m43.9s/5m30s  12/40 iters, 1 per VU
+humans        [  32% ] 280 VUs  2m43.9s/5m30s  090/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m43.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m43.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m44.9s), 281/400 VUs, 119 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m44.9s/5m30s  12/40 iters, 1 per VU
+humans        [  32% ] 280 VUs  2m44.9s/5m30s  090/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m44.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m44.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m45.9s), 277/400 VUs, 123 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m45.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m45.9s/5m30s  094/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m45.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m45.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m46.9s), 277/400 VUs, 123 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m46.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m46.9s/5m30s  094/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m46.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m46.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m47.9s), 277/400 VUs, 123 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m47.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m47.9s/5m30s  094/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m47.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m47.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m48.9s), 277/400 VUs, 123 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m48.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m48.9s/5m30s  094/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m48.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m48.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m49.9s), 277/400 VUs, 123 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m49.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m49.9s/5m30s  094/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m49.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m49.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m50.9s), 276/400 VUs, 124 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m50.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m50.9s/5m30s  095/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m50.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m50.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m51.9s), 275/400 VUs, 125 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m51.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m51.9s/5m30s  096/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m51.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m51.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m52.9s), 275/400 VUs, 125 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m52.9s/5m30s  12/40 iters, 1 per VU
+humans        [  34% ] 280 VUs  2m52.9s/5m30s  096/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m52.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m52.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m53.9s), 273/400 VUs, 127 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m53.9s/5m30s  12/40 iters, 1 per VU
+humans        [  35% ] 280 VUs  2m53.9s/5m30s  098/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m53.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m53.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m54.9s), 273/400 VUs, 127 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m54.9s/5m30s  12/40 iters, 1 per VU
+humans        [  35% ] 280 VUs  2m54.9s/5m30s  098/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m54.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m54.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m55.9s), 273/400 VUs, 127 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m55.9s/5m30s  12/40 iters, 1 per VU
+humans        [  35% ] 280 VUs  2m55.9s/5m30s  098/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m55.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m55.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m56.9s), 271/400 VUs, 129 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m56.9s/5m30s  12/40 iters, 1 per VU
+humans        [  36% ] 280 VUs  2m56.9s/5m30s  100/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m56.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m56.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m57.9s), 270/400 VUs, 130 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m57.9s/5m30s  12/40 iters, 1 per VU
+humans        [  36% ] 280 VUs  2m57.9s/5m30s  101/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m57.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m57.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m58.9s), 268/400 VUs, 132 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m58.9s/5m30s  12/40 iters, 1 per VU
+humans        [  37% ] 280 VUs  2m58.9s/5m30s  103/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m58.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m58.9s/5m30s  06/40 iters, 1 per VU
+
+running (2m59.9s), 268/400 VUs, 132 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   2m59.9s/5m30s  12/40 iters, 1 per VU
+humans        [  37% ] 280 VUs  2m59.9s/5m30s  103/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   2m59.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   2m59.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m00.9s), 268/400 VUs, 132 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m00.9s/5m30s  12/40 iters, 1 per VU
+humans        [  37% ] 280 VUs  3m00.9s/5m30s  103/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m00.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m00.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m01.9s), 267/400 VUs, 133 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m01.9s/5m30s  12/40 iters, 1 per VU
+humans        [  37% ] 280 VUs  3m01.9s/5m30s  104/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m01.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m01.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m02.9s), 266/400 VUs, 134 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m02.9s/5m30s  12/40 iters, 1 per VU
+humans        [  38% ] 280 VUs  3m02.9s/5m30s  105/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m02.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m02.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m03.9s), 265/400 VUs, 135 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m03.9s/5m30s  12/40 iters, 1 per VU
+humans        [  38% ] 280 VUs  3m03.9s/5m30s  106/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m03.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m03.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m04.9s), 265/400 VUs, 135 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m04.9s/5m30s  12/40 iters, 1 per VU
+humans        [  38% ] 280 VUs  3m04.9s/5m30s  106/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m04.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m04.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m05.9s), 264/400 VUs, 136 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m05.9s/5m30s  12/40 iters, 1 per VU
+humans        [  38% ] 280 VUs  3m05.9s/5m30s  107/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m05.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m05.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m06.9s), 263/400 VUs, 137 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m06.9s/5m30s  12/40 iters, 1 per VU
+humans        [  39% ] 280 VUs  3m06.9s/5m30s  108/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m06.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m06.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m07.9s), 262/400 VUs, 138 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m07.9s/5m30s  12/40 iters, 1 per VU
+humans        [  39% ] 280 VUs  3m07.9s/5m30s  109/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m07.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m07.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m08.9s), 262/400 VUs, 138 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m08.9s/5m30s  12/40 iters, 1 per VU
+humans        [  39% ] 280 VUs  3m08.9s/5m30s  109/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m08.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m08.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m09.9s), 262/400 VUs, 138 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m09.9s/5m30s  12/40 iters, 1 per VU
+humans        [  39% ] 280 VUs  3m09.9s/5m30s  109/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m09.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m09.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m10.9s), 261/400 VUs, 139 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m10.9s/5m30s  12/40 iters, 1 per VU
+humans        [  39% ] 280 VUs  3m10.9s/5m30s  110/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m10.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m10.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m11.9s), 261/400 VUs, 139 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m11.9s/5m30s  12/40 iters, 1 per VU
+humans        [  39% ] 280 VUs  3m11.9s/5m30s  110/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m11.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m11.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m12.9s), 259/400 VUs, 141 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m12.9s/5m30s  12/40 iters, 1 per VU
+humans        [  40% ] 280 VUs  3m12.9s/5m30s  112/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m12.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m12.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m13.9s), 258/400 VUs, 142 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m13.9s/5m30s  12/40 iters, 1 per VU
+humans        [  40% ] 280 VUs  3m13.9s/5m30s  113/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m13.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m13.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m14.9s), 257/400 VUs, 143 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m14.9s/5m30s  12/40 iters, 1 per VU
+humans        [  41% ] 280 VUs  3m14.9s/5m30s  114/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m14.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m14.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m15.9s), 256/400 VUs, 144 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m15.9s/5m30s  12/40 iters, 1 per VU
+humans        [  41% ] 280 VUs  3m15.9s/5m30s  115/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m15.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m15.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m16.9s), 254/400 VUs, 146 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m16.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m16.9s/5m30s  117/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m16.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m16.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m17.9s), 253/400 VUs, 147 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m17.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m17.9s/5m30s  118/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m17.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m17.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m18.9s), 253/400 VUs, 147 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m18.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m18.9s/5m30s  118/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m18.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m18.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m19.9s), 253/400 VUs, 147 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m19.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m19.9s/5m30s  118/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m19.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m19.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m20.9s), 253/400 VUs, 147 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m20.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m20.9s/5m30s  118/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m20.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m20.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m21.9s), 252/400 VUs, 148 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m21.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m21.9s/5m30s  119/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m21.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m21.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m22.9s), 252/400 VUs, 148 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m22.9s/5m30s  12/40 iters, 1 per VU
+humans        [  42% ] 280 VUs  3m22.9s/5m30s  119/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m22.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m22.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m23.9s), 251/400 VUs, 149 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m23.9s/5m30s  12/40 iters, 1 per VU
+humans        [  43% ] 280 VUs  3m23.9s/5m30s  120/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m23.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m23.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m24.9s), 248/400 VUs, 152 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m24.9s/5m30s  12/40 iters, 1 per VU
+humans        [  44% ] 280 VUs  3m24.9s/5m30s  123/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m24.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m24.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m25.9s), 248/400 VUs, 152 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m25.9s/5m30s  12/40 iters, 1 per VU
+humans        [  44% ] 280 VUs  3m25.9s/5m30s  123/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m25.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m25.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m26.9s), 248/400 VUs, 152 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m26.9s/5m30s  12/40 iters, 1 per VU
+humans        [  44% ] 280 VUs  3m26.9s/5m30s  123/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m26.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m26.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m27.9s), 247/400 VUs, 153 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m27.9s/5m30s  12/40 iters, 1 per VU
+humans        [  44% ] 280 VUs  3m27.9s/5m30s  124/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m27.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m27.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m28.9s), 246/400 VUs, 154 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m28.9s/5m30s  12/40 iters, 1 per VU
+humans        [  45% ] 280 VUs  3m28.9s/5m30s  125/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m28.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m28.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m29.9s), 246/400 VUs, 154 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m29.9s/5m30s  12/40 iters, 1 per VU
+humans        [  45% ] 280 VUs  3m29.9s/5m30s  125/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m29.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m29.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m30.9s), 244/400 VUs, 156 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m30.9s/5m30s  12/40 iters, 1 per VU
+humans        [  45% ] 280 VUs  3m30.9s/5m30s  127/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m30.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m30.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m31.9s), 244/400 VUs, 156 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m31.9s/5m30s  12/40 iters, 1 per VU
+humans        [  45% ] 280 VUs  3m31.9s/5m30s  127/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m31.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m31.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m32.9s), 243/400 VUs, 157 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m32.9s/5m30s  12/40 iters, 1 per VU
+humans        [  46% ] 280 VUs  3m32.9s/5m30s  128/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m32.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m32.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m33.9s), 242/400 VUs, 158 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m33.9s/5m30s  12/40 iters, 1 per VU
+humans        [  46% ] 280 VUs  3m33.9s/5m30s  129/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m33.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m33.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m34.9s), 241/400 VUs, 159 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m34.9s/5m30s  12/40 iters, 1 per VU
+humans        [  46% ] 280 VUs  3m34.9s/5m30s  130/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m34.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m34.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m35.9s), 241/400 VUs, 159 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m35.9s/5m30s  12/40 iters, 1 per VU
+humans        [  46% ] 280 VUs  3m35.9s/5m30s  130/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m35.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m35.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m36.9s), 241/400 VUs, 159 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m36.9s/5m30s  12/40 iters, 1 per VU
+humans        [  46% ] 280 VUs  3m36.9s/5m30s  130/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m36.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m36.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m37.9s), 240/400 VUs, 160 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m37.9s/5m30s  12/40 iters, 1 per VU
+humans        [  47% ] 280 VUs  3m37.9s/5m30s  131/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m37.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m37.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m38.9s), 240/400 VUs, 160 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m38.9s/5m30s  12/40 iters, 1 per VU
+humans        [  47% ] 280 VUs  3m38.9s/5m30s  131/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m38.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m38.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m39.9s), 238/400 VUs, 162 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m39.9s/5m30s  12/40 iters, 1 per VU
+humans        [  48% ] 280 VUs  3m39.9s/5m30s  133/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m39.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m39.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m40.9s), 238/400 VUs, 162 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m40.9s/5m30s  12/40 iters, 1 per VU
+humans        [  48% ] 280 VUs  3m40.9s/5m30s  133/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m40.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m40.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m41.9s), 235/400 VUs, 165 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m41.9s/5m30s  12/40 iters, 1 per VU
+humans        [  49% ] 280 VUs  3m41.9s/5m30s  136/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m41.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m41.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m42.9s), 235/400 VUs, 165 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m42.9s/5m30s  12/40 iters, 1 per VU
+humans        [  49% ] 280 VUs  3m42.9s/5m30s  136/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m42.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m42.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m43.9s), 235/400 VUs, 165 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m43.9s/5m30s  12/40 iters, 1 per VU
+humans        [  49% ] 280 VUs  3m43.9s/5m30s  136/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m43.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m43.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m44.9s), 235/400 VUs, 165 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m44.9s/5m30s  12/40 iters, 1 per VU
+humans        [  49% ] 280 VUs  3m44.9s/5m30s  136/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m44.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m44.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m45.9s), 235/400 VUs, 165 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m45.9s/5m30s  12/40 iters, 1 per VU
+humans        [  49% ] 280 VUs  3m45.9s/5m30s  136/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m45.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m45.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m46.9s), 233/400 VUs, 167 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m46.9s/5m30s  12/40 iters, 1 per VU
+humans        [  49% ] 280 VUs  3m46.9s/5m30s  138/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m46.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m46.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m47.9s), 232/400 VUs, 168 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m47.9s/5m30s  12/40 iters, 1 per VU
+humans        [  50% ] 280 VUs  3m47.9s/5m30s  139/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m47.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m47.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m48.9s), 232/400 VUs, 168 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m48.9s/5m30s  12/40 iters, 1 per VU
+humans        [  50% ] 280 VUs  3m48.9s/5m30s  139/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m48.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m48.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m49.9s), 232/400 VUs, 168 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m49.9s/5m30s  12/40 iters, 1 per VU
+humans        [  50% ] 280 VUs  3m49.9s/5m30s  139/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m49.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m49.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m50.9s), 232/400 VUs, 168 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m50.9s/5m30s  12/40 iters, 1 per VU
+humans        [  50% ] 280 VUs  3m50.9s/5m30s  139/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m50.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m50.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m51.9s), 232/400 VUs, 168 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m51.9s/5m30s  12/40 iters, 1 per VU
+humans        [  50% ] 280 VUs  3m51.9s/5m30s  139/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m51.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m51.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m52.9s), 229/400 VUs, 171 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m52.9s/5m30s  12/40 iters, 1 per VU
+humans        [  51% ] 280 VUs  3m52.9s/5m30s  142/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m52.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m52.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m53.9s), 227/400 VUs, 173 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m53.9s/5m30s  12/40 iters, 1 per VU
+humans        [  51% ] 280 VUs  3m53.9s/5m30s  144/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m53.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m53.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m54.9s), 227/400 VUs, 173 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m54.9s/5m30s  12/40 iters, 1 per VU
+humans        [  51% ] 280 VUs  3m54.9s/5m30s  144/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m54.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m54.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m55.9s), 226/400 VUs, 174 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m55.9s/5m30s  12/40 iters, 1 per VU
+humans        [  52% ] 280 VUs  3m55.9s/5m30s  145/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m55.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m55.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m56.9s), 226/400 VUs, 174 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m56.9s/5m30s  12/40 iters, 1 per VU
+humans        [  52% ] 280 VUs  3m56.9s/5m30s  145/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m56.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m56.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m57.9s), 225/400 VUs, 175 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m57.9s/5m30s  12/40 iters, 1 per VU
+humans        [  52% ] 280 VUs  3m57.9s/5m30s  146/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m57.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m57.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m58.9s), 224/400 VUs, 176 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m58.9s/5m30s  12/40 iters, 1 per VU
+humans        [  52% ] 280 VUs  3m58.9s/5m30s  147/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m58.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m58.9s/5m30s  06/40 iters, 1 per VU
+
+running (3m59.9s), 223/400 VUs, 177 complete and 0 interrupted iterations
+distributed   [  30% ] 40 VUs   3m59.9s/5m30s  12/40 iters, 1 per VU
+humans        [  53% ] 280 VUs  3m59.9s/5m30s  148/280 iters, 1 per VU
+mimic         [  28% ] 40 VUs   3m59.9s/5m30s  11/40 iters, 1 per VU
+naive         [  15% ] 40 VUs   3m59.9s/5m30s  06/40 iters, 1 per VU
+
+running (4m00.9s), 134/400 VUs, 266 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans        [  61% ] 280 VUs  4m00.9s/5m30s  172/280 iters, 1 per VU
+mimic         [  35% ] 40 VUs   4m00.9s/5m30s  14/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+
+running (4m01.9s), 099/400 VUs, 301 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans        [  72% ] 280 VUs  4m01.9s/5m30s  202/280 iters, 1 per VU
+mimic         [  48% ] 40 VUs   4m01.9s/5m30s  19/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+
+running (4m02.9s), 072/400 VUs, 328 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans        [  80% ] 280 VUs  4m02.9s/5m30s  224/280 iters, 1 per VU
+mimic         [  60% ] 40 VUs   4m02.9s/5m30s  24/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+
+running (4m03.9s), 041/400 VUs, 359 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans        [  89% ] 280 VUs  4m03.9s/5m30s  250/280 iters, 1 per VU
+mimic         [  72% ] 40 VUs   4m03.9s/5m30s  29/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+
+running (4m04.9s), 020/400 VUs, 380 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans        [  95% ] 280 VUs  4m04.9s/5m30s  266/280 iters, 1 per VU
+mimic         [  85% ] 40 VUs   4m04.9s/5m30s  34/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+
+running (4m05.9s), 009/400 VUs, 391 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans        [  98% ] 280 VUs  4m05.9s/5m30s  273/280 iters, 1 per VU
+mimic         [  95% ] 40 VUs   4m05.9s/5m30s  38/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+
+════ ShardGate §11 지표 리포트 ══════════════════════════════
+봇 비율          30.0%  (계획 사람 280 / 봇 120)
+관측 인원        사람 280 / 봇 120
+추첨 구간 진입   100.0%
+
+탐지율(recall)   75.8%      격리된 봇 / 전체 봇
+오탐율(FPR)      0.0%      격리된 사람 / 전체 사람
+
+사람 입장 성공률 52.9%   ← 봇 비율을 높여도 유지돼야 하는 값
+봇  입장 성공률  24.2%
+주문 성사        177건
+대기 시간        평균 122.2s / P99 237.6s
+
+탐지 vs 입장     입장 중앙값 사람 136.4s / 봇 65.1s · 격리 중앙값 135.2s (P90 180.6s)
+
+PoW 비용         평균 2ms / P99 19ms (난이도 평균 8.0)
+HTTP             189.9 req/s, 실패 4.4%, P99 40ms
+
+→ loadtest/results/gate/mixed-off-r2-ratio0.3.json
+
+running (4m06.6s), 000/400 VUs, 400 complete and 0 interrupted iterations
+distributed ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+humans      ✓ [ 100% ] 280 VUs  4m06.6s/5m30s  280/280 iters, 1 per VU
+mimic       ✓ [ 100% ] 40 VUs   4m06.0s/5m30s  40/40 iters, 1 per VU
+naive       ✓ [ 100% ] 40 VUs   4m00.5s/5m30s  40/40 iters, 1 per VU
+time="2026-08-14T12:23:20Z" level=error msg="thresholds on metrics 'sg_bot_isolated' have been crossed"

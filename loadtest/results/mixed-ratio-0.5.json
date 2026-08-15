@@ -1,0 +1,36 @@
+{
+  "bot_ratio": 0.5,
+  "planned": {
+    "total": 400,
+    "humans": 200,
+    "bots": 200
+  },
+  "observed": {
+    "humans": 200,
+    "bots": 198
+  },
+  "detection": {
+    "recall": 0.398989898989899,
+    "fpr": 0
+  },
+  "admission": {
+    "human_success_rate": 0.395,
+    "bot_success_rate": 0.48484848484848486,
+    "human_admitted": 79,
+    "bot_admitted": 96,
+    "wait_p99_sec": 175.92213999999998,
+    "wait_avg_sec": 90.62560000000003,
+    "orders": 175
+  },
+  "cost": {
+    "pow_solve_avg_ms": 1.9447236180904524,
+    "pow_solve_p99_ms": 20.989999999999885,
+    "pow_difficulty_avg": 8
+  },
+  "http": {
+    "requests": 35213,
+    "rps": 189.63664059200696,
+    "failed_rate": 0.02612671456564337,
+    "p99_ms": 58.33524995999999
+  }
+}

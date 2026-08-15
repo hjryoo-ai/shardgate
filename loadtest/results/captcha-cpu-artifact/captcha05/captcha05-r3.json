@@ -1,0 +1,63 @@
+{
+  "bot_ratio": 0.3,
+  "planned": {
+    "total": 1000,
+    "humans": 700,
+    "bots": 300
+  },
+  "observed": {
+    "humans": 700,
+    "bots": 261
+  },
+  "fairness": {
+    "lottery_segment_rate": 1
+  },
+  "detection": {
+    "recall": 0.8467432950191571,
+    "fpr": 0
+  },
+  "admission": {
+    "human_success_rate": 0.4828571428571429,
+    "bot_success_rate": 0.13026819923371646,
+    "human_admitted": 338,
+    "bot_admitted": 34,
+    "wait_p99_sec": 297.98162,
+    "wait_avg_sec": 219.8100215053762,
+    "orders": 372
+  },
+  "rechallenge": {
+    "captcha_proxy": 0.5,
+    "bot_attempts": 6,
+    "human_attempts": 0,
+    "restored": 6,
+    "exhausted": 0,
+    "abandoned": 126
+  },
+  "race": {
+    "human_wait_med_sec": 204.457,
+    "bot_wait_med_sec": 203.8945,
+    "isolate_med_sec": 137.643,
+    "isolate_p90_sec": 216.13860000000003
+  },
+  "cost": {
+    "pow_solve_avg_ms": 1112.8053359683795,
+    "pow_solve_p99_ms": 1042.3099999999938,
+    "pow_difficulty_avg": 10.558697514995716
+  },
+  "http": {
+    "requests": 139975,
+    "rps": 333.26694247276265,
+    "failed_rate": 0.000042864797285229504,
+    "p99_ms": 1159.24282526,
+    "failed_by_endpoint": {
+      "enter": 0,
+      "verify": 0,
+      "status": 0,
+      "heartbeat": 0,
+      "redeem": 0,
+      "order": 0,
+      "reissue": 0,
+      "reverify": 0.5
+    }
+  }
+}

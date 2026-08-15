@@ -1,0 +1,45 @@
+version: "2"
+
+run:
+  timeout: 5m
+  build-tags:
+    - integration
+
+linters:
+  default: standard
+  enable:
+    - bodyclose
+    - errorlint
+    - gosec
+    - misspell
+    - nilerr
+    - revive
+    - unconvert
+    - wastedassign
+
+  settings:
+    errcheck:
+      check-type-assertions: true
+    gosec:
+      excludes:
+        # 대기열 순번 추첨은 암호학적 강도가 필요 없는 지점에서 math/rand 를 쓴다.
+        # 실제 추첨 난수는 crypto/rand 로 생성해 Lua 에 넘긴다(scripts/lua/enqueue.lua).
+        - G404
+    revive:
+      rules:
+        - name: exported
+          disabled: true
+
+  exclusions:
+    rules:
+      - path: _test\.go
+        linters: [gosec, errcheck]
+
+formatters:
+  enable:
+    - gofmt
+    - goimports
+  settings:
+    goimports:
+      local-prefixes:
+        - github.com/hjr/shardgate

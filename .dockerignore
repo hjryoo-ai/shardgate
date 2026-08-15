@@ -1,0 +1,7 @@
+bin/
+.git/
+.github/
+loadtest/results/
+coverage.out
+*.md
+.env

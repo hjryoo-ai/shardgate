@@ -1,0 +1,27 @@
+{
+ "arm": "clumsy-robust",
+ "rep": 2,
+ "seed": "r2",
+ "commit": null,
+ "dirty": false,
+ "env": {
+  "SG_ADMIT_INTERVAL": "4s",
+  "SG_ADMIT_MIN_BEATS": "5",
+  "SG_ADMIT_MIN_DWELL": "200s",
+  "SG_ADMIT_RATE_PER_MIN": "75",
+  "SG_ARM": "clumsy-robust",
+  "SG_BOT_RATIO": "0.3",
+  "SG_CAPTCHA_PROXY": "1.0",
+  "SG_CLUMSY": "100",
+  "SG_EVENT_OPEN_AT": "2026-08-15T22:37:05Z",
+  "SG_GREYLIST_DIFFICULTY_BUMP": "0",
+  "SG_LOTTERY_WINDOW": "90s",
+  "SG_PATIENCE": "300",
+  "SG_POW_BASE_DIFFICULTY": "8",
+  "SG_REP": "2",
+  "SG_SCORE_ROBUST_BASELINE": "true",
+  "SG_SHARD_COUNT": "2",
+  "SG_SHARD_SIZE": "600",
+  "SG_TOTAL": "1000"
+ }
+}

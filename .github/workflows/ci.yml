@@ -1,0 +1,66 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: gofmt 검사
+        run: |
+          diff=$(gofmt -l .)
+          if [ -n "$diff" ]; then echo "gofmt 필요:"; echo "$diff"; exit 1; fi
+
+      - name: go vet
+        run: go vet ./...
+
+      - name: 단위 테스트
+        run: go test -race ./...
+
+      - name: 빌드
+        run: make build
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - uses: golangci/golangci-lint-action@v6
+        with:
+          version: latest
+
+  # compose 가 포트를 0.0.0.0 에 게시하는 회귀를 PR 단계에서 잡는다.
+  # 이 검사가 생긴 이유는 scripts/check-exposure.sh 머리에 적어 두었다.
+  # Docker 없이 도는 정적 검사라 러너에서 몇 초면 끝난다.
+  exposure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 포트 노출 점검
+        run: make check-exposure
+
+  # Lua 스크립트는 miniredis 가 아니라 실제 Redis 로 검증한다(CLAUDE.md Conventions).
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+      - name: 통합 테스트 (testcontainers)
+        run: go test -tags=integration -timeout=20m ./...
